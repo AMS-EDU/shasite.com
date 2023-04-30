@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Tutorial 6 on PHP variables</title>
+    <title>PHP variables Rules</title>
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,9 +52,15 @@
         <ul>
             <li>Starts with a $ sign</li>
             <li>Cannot start with a number</li>
+            <ul>
+              <li>Means $1foobar isn't acceptable. But..</li>
+            </ul>
             <li>Must start with a letter or an underscore character</li>
+            <ul>
+              <li>variable $_1foobar is totally acceptable, since it starts with an underscore.</li>
+            </ul>
             <li>Can only contain alphanumeric characters and underscores</li>
-            <li>Variables in php are Case sensitive. ($harry, $hArry and $Harry are different)</li>
+            <li>Variables in php are Case sensitive. ($foobar, $fOobar and $Foobar are different)</li>
             <?php //$name5="harry"; //echo $name5;?>
         </ul> 
     </div>
